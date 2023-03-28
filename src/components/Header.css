@@ -1,0 +1,41 @@
+
+
+*,
+*::before,
+*::after{
+    margin:0px;
+}
+header{
+    background: black;
+    box-sizing: border-box;
+    height:5.5rem;
+    display:flex;
+    justify-content: space-around;
+}
+header > img{
+    align-self: center;
+    height:6em;
+    width:400px;
+}
+header > h1{
+    align-self:center;
+    font-size: 4rem;
+    color:white;
+}
+header > div{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:5em;
+}
+.header-text{
+    list-style: none;
+    color:white;
+    display:inline;
+    padding-right:2em;
+}
+.header-button{
+    padding:15px;
+    border: 2px white solid;
+    border-radius: 20% / 50%
+}
