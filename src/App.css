@@ -1,4 +1,54 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
+.hero-section{
+  margin: 0px;
+  height: 49em;
+  width:100%;
+  padding-bottom: 100px;
+  background: url('/public/girl-flexing.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-line{
+  height:2em;
+  background-color: greenyellow;
+  padding:1em;
+}
+.text-line li{
+  display: inline;
+  padding-right:3em;
+  font-size: 2em;
+}
+.landing{
+  color:white;
+  height:100%;
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+.landing section > h4{
+  font-size: 3em;
+}
+.landing section > h1{
+  font-size: 7em;
+}
+.landing section > a{
+  font-size: 2em;
+  height:40px;
+  width:100%;
+  padding:10px;
+  color:black;
+  background-color: greenyellow;
+  border-radius: 15% / 50%;
+}
+.landing section{
+  grid-area:2/2/3/3;
+  padding-bottom:12em;
+  padding-right:3em;
+  text-align: end;
+}

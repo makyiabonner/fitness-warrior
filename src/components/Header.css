@@ -6,11 +6,13 @@
     margin:0px;
 }
 header{
-    background: black;
+    background: transparent;
     box-sizing: border-box;
     height:5.5rem;
+    position: sticky;
     display:flex;
     justify-content: space-around;
+    top:0;
 }
 header > img{
     align-self: center;
