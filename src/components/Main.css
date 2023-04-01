@@ -1,0 +1,20 @@
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: rgb(255, 255, 255);
+}
+.program{
+    display: flex;
+    flex-direction: column;
+    margin: 6em auto;
+    color:black;
+}
+.program-img{
+    width: 500px;
+    height:400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgb(59, 59, 59) 10px 1px 49px;
+}

@@ -8,7 +8,7 @@
   height: 49em;
   width:100%;
   padding-bottom: 100px;
-  background: url('/public/girl-flexing.jpg');
+  background: url('./images/girl-flexing.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
