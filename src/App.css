@@ -2,26 +2,37 @@
   display: flex;
   justify-content: center;
 }
-
+/*response 
+    tablet done*/
 .hero-section{
   margin: 0px;
-  height: 49em;
+  height:100vh;
   width:100%;
   padding-bottom: 100px;
-  background: url('./images/girl-flexing.jpg');
+  background: url('images/girl-flexing.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+/*response 
+    tablet done*/
 .text-line{
-  height:2em;
+  height:8vh;
+  width:100%;
   background-color: greenyellow;
   padding:1em;
+  box-sizing: border-box;
+}
+.text-line ul{
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 .text-line li{
-  display: inline;
-  padding-right:3em;
-  font-size: 2em;
+  font-size: clamp(.9rem,1.8vw, 2rem);
 }
 .landing{
   color:white;
@@ -32,13 +43,13 @@
   grid-template-rows: repeat(2,1fr);
 }
 .landing section > h4{
-  font-size: 3em;
+  font-size: clamp(2rem,3.7vw,3rem);
 }
 .landing section > h1{
-  font-size: 7em;
+  font-size: clamp(5rem,9vw,7em);
 }
 .landing section > a{
-  font-size: 2em;
+  font-size: clamp(1.4rem,2vw,2em);
   height:40px;
   width:100%;
   padding:10px;

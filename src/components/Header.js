@@ -1,8 +1,9 @@
 import './Header.css'
+import logo from '../images/default-monochrome-white.svg'
 export default function Header(){
     return (
         <header>
-            <img src='logo/vector/default-monochrome-white.svg' ></img>
+            <img src={logo}></img>
             <div>
                 <li className="header-text">PROGRAMS</li>
                 <li className="header-text">TESTIMONIALS</li>

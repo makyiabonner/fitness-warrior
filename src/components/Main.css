@@ -1,20 +1,72 @@
-.first-section{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+
+.program-section{
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
+
 }
 .program{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 500px;
     margin: 6em auto;
     color:black;
 }
 .program-img{
-    width: 500px;
+    width: 30vw;
     height:400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: rgb(59, 59, 59) 10px 1px 49px;
+}
+.program-text{
+    padding-top: 50px;
+}
+.program-text > h3{
+    font-size: 40px;
+}
+.program-text > p{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.subhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: italic;
+    font-size: 40px;
+    margin-top:80px;
+    margin-left:40px;
+}
+.member-section{
+    background-color: rgb(204, 171, 171);
+    height: 50em;
+    width:100%;
+}
+@media(max-width:1024px){
+    .program-img{
+        width: 300px;
+        height: 300px;
+    }
+    .program-section{
+        width: 120vw;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 34px;
+    }
+    .program-text > h3{
+        font-size: 30px;
+    }
+    .program-text{
+        padding-top: 50px;
+        width: 400px;
+    }
+}
+.select-section{
+    display: flex;
+    justify-content: space-around;
+    width:calc(100vw - 20em);
+    margin: 6em auto;
 }

@@ -9,6 +9,7 @@ header{
     background: transparent;
     box-sizing: border-box;
     height:5.5rem;
+    width:100%;
     position: sticky;
     display:flex;
     justify-content: space-around;
@@ -40,4 +41,9 @@ header > div{
     padding:15px;
     border: 2px white solid;
     border-radius: 20% / 50%
+}
+@media(max-width:1024px){
+    header > img{
+        height:3.5em;
+    }
 }
