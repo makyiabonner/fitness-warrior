@@ -8,7 +8,7 @@ export function Subhead(props){
     return(
         <>
             <div className='subhead'>
-                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <svg fill="#adff2f" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 	 width="100px" height="100px" viewBox="0 0 300 300" enable-background="new 0 0 300 300">
                 <g>
                 	<path d="M150,7.5C71.421,7.5,7.5,71.434,7.5,150S71.421,292.5,150,292.5S292.5,228.566,292.5,150S228.579,7.5,150,7.5z
@@ -29,6 +29,7 @@ export function Subhead(props){
                 </svg>
                 <h2>{props.subhead}</h2>
             </div>
+            <p>{props.context}</p>
         </>
     )
 }
@@ -56,41 +57,58 @@ export function Program(props){
 export default function Main(){
     return(
         <>
-        <Subhead 
-            subhead='Our Programs'
-        />
-        <section className='program-section'>
-            <Program 
-                radius='61% 39% 73% 27% / 11% 46% 54% 89%'
-                imgurl= {yoga} 
-                title='YOGA'
+        <section className='main-section'>
+            <Subhead 
+                subhead='Our Programs'
                 context='Deepen your practice through
                     traditional yoga flows with us.'
             />
+            <div className='program-div'>
+                <Program 
+                    radius='61% 39% 73% 27% / 11% 46% 54% 89%'
+                    imgurl= {yoga} 
+                    title='YOGA'
+                    context='Deepen your practice through
+                        traditional yoga flows with us.'
+                />
 
-            <Program
-                radius='19% 81% 44% 56% / 9% 40% 60% 91%'
-                imgurl={cardio}
-                title='CARDIO AND HIT'
-                context='Deepen your practice through
-                    traditional yoga flows with us.'
-            />
+                <Program
+                    radius='19% 81% 44% 56% / 9% 40% 60% 91%'
+                    imgurl={cardio}
+                    title='CARDIO AND HIT'
+                    context='Deepen your practice through
+                        traditional yoga flows with us.'
+                />
 
-            <Program 
-                radius='69% 31% 90% 10% / 76% 50% 50% 24%'
-                imgurl={strength}
-                title='STRENGTH TRAINING'
-                context='Deepen your practice through
-                    traditional yoga flows with us.'
-            />
+                <Program 
+                    radius='69% 31% 90% 10% / 76% 50% 50% 24%'
+                    imgurl={strength}
+                    title='STRENGTH TRAINING'
+                    context='Deepen your practice through
+                        traditional yoga flows with us.'
+                />
+            </div>
         </section>
-        <section className='member-section'>
+        <section className='main-section'>
             <div>
-                <Subhead subhead='MEMBERSHIP'/>
+                <Subhead 
+                    subhead='MEMBERSHIP'
+                    context='Deepen your practice through
+                    traditional yoga flows with us.'
+                />
                 <div className='select-section'>
-                    <Membership />
-                    <Membership />
-                    <Membership />
+                    <Membership 
+                        pass='1 DAY PASS'
+                        price='Free'
+                    />
+                    <Membership 
+                        pass='1 MONTH PASS'
+                        price='$25.99'
+                    />
+                    <Membership 
+                        pass='1 YEAR PASS'
+                        price='$175.99'
+                    />
                 </div>
             </div>
         </section>

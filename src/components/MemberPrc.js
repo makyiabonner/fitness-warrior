@@ -11,13 +11,12 @@ export default function Membership(props){
                     background:`url(${basicPattern})`,
                     backgroundSize:'contain'
                 }}>   
-                <h3>1 MONTH PASS
-                </h3>
+                <h3>{props.pass}</h3>
             </div>
             <div className='membership-select'>
                 <div className='membership-select-left-div'>
                     <p>PRICES START FROM</p>
-                    <h4>FREE</h4>
+                    <h4>{props.price}</h4>
                 </div>
                 <div className='membership-select-right-div'
                     style={{
