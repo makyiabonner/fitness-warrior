@@ -112,6 +112,15 @@ export default function Main(){
                 </div>
             </div>
         </section>
+        <section className='main-section light'>
+            <div>
+                <Subhead 
+                    subhead='WHAT THEY SAY'
+                    context='Gain your routine with our 
+                    growing library of workouts led by our 
+                    world-class trainers'/>
+            </div>
+        </section>
         </>
     )
 }

@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(42, 40, 63);
+  background-color: rgb(25, 24, 37);
 }
 .App {
   display: flex;
@@ -38,7 +38,6 @@ body{
   font-size: clamp(.9rem,1.8vw, 2rem);
 }
 .landing{
-  color:white;
   height:100%;
   width:100%;
   display: grid;
@@ -47,9 +46,11 @@ body{
 }
 .landing section > h4{
   font-size: clamp(2rem,3.7vw,3rem);
+  color:white;
 }
 .landing section > h1{
   font-size: clamp(5rem,9vw,7em);
+  color:white;
 }
 .landing section > a{
   font-size: clamp(1.4rem,2vw,2em);
@@ -65,4 +66,8 @@ body{
   padding-bottom:12em;
   padding-right:3em;
   text-align: end;
+}
+.main-section:nth-child(5){
+  background-color: white;
+  color:black;
 }
