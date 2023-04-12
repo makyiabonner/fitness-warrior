@@ -3,6 +3,9 @@ import Membership from './MemberPrc'
 import yoga from '../images/yoga.jpg'
 import strength from '../images/weightlifting.jpg'
 import cardio from '../images/cardio.jpg'
+import Testimonial from './Testimonial'
+import woman1 from '../images/woman1-profile.jpg'
+import guy1 from '../images/guy1-profile.jpg'
 
 export function Subhead(props){
     return(
@@ -100,6 +103,9 @@ export default function Main(){
                     <Membership 
                         pass='1 DAY PASS'
                         price='Free'
+                        style={{
+                            backgroundColor:'grey'
+                        }}
                     />
                     <Membership 
                         pass='1 MONTH PASS'
@@ -112,13 +118,27 @@ export default function Main(){
                 </div>
             </div>
         </section>
-        <section className='main-section light'>
+        <section className='main-section'>
             <div>
                 <Subhead 
                     subhead='WHAT THEY SAY'
                     context='Gain your routine with our 
                     growing library of workouts led by our 
                     world-class trainers'/>
+            </div>
+            <div className='reviews'>
+                <Testimonial 
+                    img={woman1}
+                    name='Rhonda Jones'
+                    profile='@IAMRHONDA223'
+                    job='Influencer'
+                />
+                <Testimonial 
+                    img={guy1}
+                    name='Ralph Gonzalez'
+                    profile='@WRECKITRALPH'
+                    job='Fitness Trainer'
+                />
             </div>
         </section>
         </>

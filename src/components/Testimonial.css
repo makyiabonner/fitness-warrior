@@ -1,0 +1,41 @@
+.reviews-text{
+    width:40vw;
+    height: max-content;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.reviews-text > h1{
+    color:greenyellow;
+    font-size: 4em;
+    font-style: oblique;
+    font-weight: bolder;
+    margin-bottom: .5em;
+}
+.reviews-text > h3{
+    font-size: 2.5em;
+    text-align: left;
+}
+.reviews-profile{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+}
+.reviews-profile > div{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+.reviews-profile >img{
+    height:150px;
+    width:150px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.reviews-profile h6{
+    font-size: 1.5em;
+}
+.reviews-profile span{
+    font-size: 1.3em;
+}

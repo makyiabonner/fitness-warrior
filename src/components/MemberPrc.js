@@ -8,7 +8,6 @@ export default function Membership(props){
             <div 
                 className='membership-img' 
                 style={{
-                    background:`url(${basicPattern})`,
                     backgroundSize:'contain'
                 }}>   
                 <h3>{props.pass}</h3>

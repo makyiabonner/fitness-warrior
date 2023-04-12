@@ -37,10 +37,13 @@
     background-color: rgb(25, 24, 37);
     height:max-content;
     width:100%;
-    padding:1em;
+    padding:5em;
     margin-top:8em;
     box-sizing: border-box;
     color:white;
+}
+.main-section:nth-child(5){
+    background-color: white;
 }
 .program-div{
     display: flex;
@@ -53,4 +56,8 @@
     justify-content: space-around;
     width:calc(100vw - 20em);
     margin: 6em auto;
+}
+.reviews{
+    display:flex;
+    margin-top:3em;
 }
