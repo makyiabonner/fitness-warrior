@@ -1,4 +1,5 @@
 import './Footer.css'
+import InstaPics from './Instagram-slides'
 import {Subhead} from './Main'
 
 /*Subhead has 2 props, 
@@ -30,6 +31,9 @@ export default function Footer(){
                         <h2>#JOINFITNESSWARRIOR</h2>
                     </div>
                 </article>
+            </div>
+            <div className='footer-div'>
+                <InstaPics />
             </div>
         </section>
         </>

@@ -1,0 +1,28 @@
+.insta > div{
+    background-color: red;
+    height:60vh;
+    width:33em;
+}
+.insta{
+    display:flex;
+    height:60vh;
+    width:100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 30px;
+}
+.Hover-coat{
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Hover-logo{
+    width:100px;
+    height: 100px;
+}

@@ -11,7 +11,8 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height:30vh;
+    height:max-content;
+    padding: 3.4em;
     border-bottom:2px solid white;
     box-sizing: border-box;
     width:calc(100vw - 20em);
