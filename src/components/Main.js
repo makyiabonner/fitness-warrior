@@ -1,8 +1,8 @@
 import './Main.css'
 import Membership from './MemberPrc'
-import yoga from '../images/yoga.jpg'
-import strength from '../images/weightlifting.jpg'
-import cardio from '../images/cardio.jpg'
+import yoga from '../images/yoga.webp'
+import strength from '../images/weightlifting.webp'
+import cardio from '../images/cardio.webp'
 import Testimonial from './Testimonial'
 
 
