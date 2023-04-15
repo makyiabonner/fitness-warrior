@@ -4,8 +4,7 @@ import yoga from '../images/yoga.jpg'
 import strength from '../images/weightlifting.jpg'
 import cardio from '../images/cardio.jpg'
 import Testimonial from './Testimonial'
-import woman1 from '../images/woman1-profile.jpg'
-import guy1 from '../images/guy1-profile.jpg'
+
 
 export function Subhead(props){
     return(
@@ -36,25 +35,46 @@ export function Subhead(props){
         </>
     )
 }
-export function Program(props){
+export function Program(){
+    const services = [{
+        radius:'61% 39% 73% 27% / 11% 46% 54% 89%',
+        imgurl: yoga,
+        title:'YOGA',
+        context:'Deepen your practice through traditional yoga flows with us.'
+    },{
+        radius:'19% 81% 44% 56% / 9% 40% 60% 91%',
+        imgurl:cardio,
+        title:'CARDIO AND HIT',
+        context:'Deepen your practice through traditional yoga flows with us.'
+    },{
+        radius:'69% 31% 90% 10% / 76% 50% 50% 24%',
+        imgurl:strength,
+        title:'STRENGTH TRAINING',
+        context:'Deepen your practice through traditional yoga flows with us.'
+    }]
+
     return(
-        <>
-            <div className='program'>
-                <div 
-                    className='program-img'
-                    style={{
-                    borderRadius:props.radius,
-                    backgroundImage:`url(${props.imgurl})`
-                    
-                    }}
-                    >
-                </div>
-                <section className='program-text'>
-                    <h3>{props.title}</h3>
-                    <p>{props.context}</p>
-                </section>
-            </div>         
-        </>
+        services.map(obj =>{
+            return(
+                <>
+                    <div className='program'>
+                        <div 
+                            className='program-img'
+                            style={{
+                            borderRadius:obj.radius,
+                            backgroundImage:`url(${obj.imgurl})`
+                            
+                            }}
+                            >
+                        </div>
+                        <section className='program-text'>
+                            <h3>{obj.title}</h3>
+                            <p>{obj.context}</p>
+                        </section>
+                    </div>         
+                </>
+            )
+    })
     )
 }
 export default function Main(){
@@ -67,29 +87,7 @@ export default function Main(){
                     traditional yoga flows with us.'
             />
             <div className='program-div'>
-                <Program 
-                    radius='61% 39% 73% 27% / 11% 46% 54% 89%'
-                    imgurl= {yoga} 
-                    title='YOGA'
-                    context='Deepen your practice through
-                        traditional yoga flows with us.'
-                />
-
-                <Program
-                    radius='19% 81% 44% 56% / 9% 40% 60% 91%'
-                    imgurl={cardio}
-                    title='CARDIO AND HIT'
-                    context='Deepen your practice through
-                        traditional yoga flows with us.'
-                />
-
-                <Program 
-                    radius='69% 31% 90% 10% / 76% 50% 50% 24%'
-                    imgurl={strength}
-                    title='STRENGTH TRAINING'
-                    context='Deepen your practice through
-                        traditional yoga flows with us.'
-                />
+                <Program />
             </div>
         </section>
         <section className='main-section'>
@@ -100,21 +98,7 @@ export default function Main(){
                     traditional yoga flows with us.'
                 />
                 <div className='select-section'>
-                    <Membership 
-                        pass='1 DAY PASS'
-                        price='Free'
-                        style={{
-                            backgroundColor:'grey'
-                        }}
-                    />
-                    <Membership 
-                        pass='1 MONTH PASS'
-                        price='$25.99'
-                    />
-                    <Membership 
-                        pass='1 YEAR PASS'
-                        price='$175.99'
-                    />
+                    <Membership />
                 </div>
             </div>
         </section>
@@ -127,18 +111,7 @@ export default function Main(){
                     world-class trainers'/>
             </div>
             <div className='reviews'>
-                <Testimonial 
-                    img={woman1}
-                    name='Rhonda Jones'
-                    profile='@IAMRHONDA223'
-                    job='Influencer'
-                />
-                <Testimonial 
-                    img={guy1}
-                    name='Ralph Gonzalez'
-                    profile='@WRECKITRALPH'
-                    job='Fitness Trainer'
-                />
+                <Testimonial />
             </div>
         </section>
         </>

@@ -1,6 +1,6 @@
-.insta > div{
+.instapics{
     background-color: red;
-    height:60vh;
+    height:30em;
     width:33em;
 }
 .insta{
@@ -18,7 +18,7 @@
     height:100%;
     width:100%;
     background-color: rgba(0,0,0,.3);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
