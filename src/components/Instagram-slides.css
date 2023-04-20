@@ -18,9 +18,14 @@
     height:100%;
     width:100%;
     background-color: rgba(0,0,0,.3);
-    display: none;
+    display: flex;
+    opacity: 0;
     align-items: center;
     justify-content: center;
+}
+.Hover-coat:hover{
+    display: flex;
+    opacity: 100%;
 }
 .Hover-logo{
     width:100px;
