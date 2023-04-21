@@ -16,13 +16,18 @@
     padding-bottom:60px;
 }
 .insta::-webkit-scrollbar{
-    background-color: rgb(32, 32, 32);
-    height:10px;
-    border-radius: 1%/40%;
+    background-color: transparent;
+}
+.insta::-webkit-scrollbar-track{
+    background-clip: content-box; 
+    border: 6px solid transparent;
+    height:1px;
+    background-color: rgb(32,32,32);
 }
 .insta::-webkit-scrollbar-thumb{
     background-color: greenyellow;
     border-radius: 1%/40%;
+    border :4px solid black;
 }
 
 .Hover-coat{
