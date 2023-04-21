@@ -2,37 +2,37 @@ import './Instagram-slides.css'
 import React from "react";
 import hoverLogo from '../images/instagram-coloredlogo.svg'
 import pic1 from '..//images/sven-mieke-1MrMsNBcsYA-unsplash.webp'
-import pic2
-import pic3
-import pic4
-import pic5
-import pic6
+import pic2 from '../images/sven-mieke-5xcVdzf_GWg-unsplash.webp'
+import pic3 from '../images/sven-mieke-jO6vBWX9h9Y-unsplash.webp'
+import pic4 from '../images/sven-mieke-OJlS0Iiv0mc-unsplash.webp'
+import pic5 from '../images/sven-mieke-rZMe6PJJlko-unsplash.webp'
+import pic6 from '../images/sven-mieke-t38NO0uU6tU-unsplash.webp'
 
 
 export default function InstaPics(){
         const pics = [
             {
-                img:'',
+                img:pic1,
                 alt:''
             },
             {
-                img:'',
+                img:pic2,
                 alt:''
             },
             {
-                img:'',
+                img:pic3,
                 alt:''
             },
             {
-                img:'',
+                img:pic4,
                 alt:''
             },
             {
-                img:'',
+                img:pic5,
                 alt:''
             },
             {
-                img:'',
+                img:pic6,
                 alt:''
             },
         ]
@@ -48,7 +48,9 @@ export default function InstaPics(){
                 return (
                 <div className='instapics' onMouseOver={MouseOver} onMouseOut={MouseOut}
                     style={{
-                        background:`url(${pic.img})`
+                        background:`url(${pic.img})`,
+                        backgroundSize:'cover',
+                        backgroundPosition:'center'
                     }}>
                     <div className='Hover-coat'>
                     <a href='' alt='Instagram Logo'>

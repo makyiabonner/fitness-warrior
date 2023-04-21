@@ -14,10 +14,11 @@
     grid-template-columns: repeat(6,1fr);
     column-gap: 30px;
 }
+
 .Hover-coat{
     height:100%;
     width:100%;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.6);
     display: flex;
     opacity: 0;
     align-items: center;
