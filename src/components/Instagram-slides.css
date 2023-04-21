@@ -13,6 +13,16 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     column-gap: 30px;
+    padding-bottom:60px;
+}
+.insta::-webkit-scrollbar{
+    background-color: rgb(32, 32, 32);
+    height:10px;
+    border-radius: 1%/40%;
+}
+.insta::-webkit-scrollbar-thumb{
+    background-color: greenyellow;
+    border-radius: 1%/40%;
 }
 
 .Hover-coat{
