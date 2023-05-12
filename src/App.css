@@ -1,6 +1,7 @@
 body{
-  background-color: rgb(25, 24, 37);
+  background: linear-gradient(180deg,black,rgb(25, 24, 37) 2%);
 }
+/*background-color: rgb(25, 24, 37);*/
 .App {
   display: flex;
   justify-content: center;

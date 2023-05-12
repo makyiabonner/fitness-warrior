@@ -6,9 +6,9 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div>
+      <Header />
       <div className='hero-section'>
-        <Header />
         <div className='landing'>
           <section>
             <h4>WELCOME TO THE BEST</h4>
@@ -28,7 +28,7 @@ function App() {
       </div>
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
